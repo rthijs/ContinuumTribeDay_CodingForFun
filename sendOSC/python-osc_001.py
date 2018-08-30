@@ -3,6 +3,7 @@
 #python-osc only works with python 3 so make sure to set your environment!
 
 #official python-osc website: https://pypi.org/project/python-osc/
+#code taken from the example code there
 
 """Small example OSC client
 
