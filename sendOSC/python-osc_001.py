@@ -17,6 +17,9 @@ import time
 from pythonosc import osc_message_builder
 from pythonosc import udp_client
 
+#from the Sonic Pi github:
+#sender = udp_client.SimpleUDPClient('127.0.0.1', 4559)
+#sender.send_message('/trigger/prophet', [70, 100, 8])
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
