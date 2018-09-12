@@ -14,6 +14,28 @@ import time
 from pythonosc import osc_message_builder
 from pythonosc import udp_client
 
+'''
+#paste this in Sonic Pi and run it
+live_loop :testWebCam do
+  use_real_time
+  pad, status = (sync "/osc:127.0.0.1:**/pad") #sync gets an array of values, take the first one
+  print pad
+  print status
+  if (pad == 3 and status == 1)
+    sample :drum_heavy_kick
+  end
+  
+  if (pad == 2 and status == 1)
+    sample :drum_snare_hard
+  end
+  
+  if (pad == 1 and status == 1)
+    sample :drum_cymbal_open
+  end
+  
+end
+'''
+
 osc_ip = '127.0.0.1'
 osc_port = 4559 #Sonic Pi
 osc_client = udp_client.SimpleUDPClient(osc_ip,osc_port)
