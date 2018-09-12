@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Socket io test</title>
+    </head>
+    <body>
+        <h1>Hallo</h1>
+
+
+        <script src="socket.io.js"></script>
+
+        <script>
+
+            var socket = io.connect('http://localhost:8080');
+
+            socket.emit('message', 'test 123')
+
+        </script>
+    </body>
+</html>
