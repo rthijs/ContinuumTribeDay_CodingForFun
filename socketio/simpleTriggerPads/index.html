@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Socket io test</title>
+        <script src="jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+        <button type="button" id="pad_1">1</button> 
+
+
+        <script src="socket.io.js"></script>
+
+        <script>
+
+            var socket = io.connect(location.host)
+
+            function sendMessage(type,message) {
+                socket.emit(type, message)
+            }
+
+            $("#pad_1").click(function(){
+                sendMessage('pad_hit', '1')
+            });
+
+        </script>
+    </body>
+</html>
