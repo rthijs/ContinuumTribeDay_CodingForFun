@@ -6,6 +6,8 @@ from aiohttp import web
 import socketio
 import os
 
+import asyncio
+
 from pythonosc import udp_client
 from pythonosc import osc_message_builder
 
@@ -36,7 +38,7 @@ async def jqueryjs(request):
         return web.Response(text=f.read())
 
 @sio.on('pad_hit')
-def handle_pad_hit(sid, message):
+async def handle_pad_hit(sid, message):
     print("pad hit: ", message)
     command = 'sample :bd_fat' #Sonic Pi code to execute
     msg = osc_message_builder.OscMessageBuilder(address=RUN_COMMAND)
@@ -44,6 +46,8 @@ def handle_pad_hit(sid, message):
     msg.add_arg(command)
     msg = msg.build()
     client.send(msg)
+    #await sio.emit("broadcast", {'key':'value'})
+    asyncio.ensure_future(sio.emit("broadcast", {'key':'value'}))
 
 
 app.router.add_get('/', index)
