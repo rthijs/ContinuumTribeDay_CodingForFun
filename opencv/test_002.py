@@ -49,9 +49,9 @@ ap.add_argument("-b", "--buffer", type=int, default=64,
 args = vars(ap.parse_args())
 
 # define boundaries of trigger zones, frame is 600x448 pixels
-trg_zone_1 = ((0,400),(200,448))
-trg_zone_2 = ((200,400),(400,448))
-trg_zone_3 = ((400,400),(600,448))
+trg_zone_1 = ((0,300),(200,448))
+trg_zone_2 = ((200,300),(400,448))
+trg_zone_3 = ((400,300),(600,448))
 
 trg_zone_1_line_thickness = 3
 trg_zone_2_line_thickness = 3
@@ -60,8 +60,8 @@ trg_zone_3_line_thickness = 3
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
-greenLower = (102, 186, 174)
-greenUpper = (112, 255, 255)
+greenLower = (66, 84, 208)
+greenUpper = (79, 197, 255)
 pts = deque(maxlen=args["buffer"])
  
 # if a video path was not supplied, grab the reference
