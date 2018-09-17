@@ -1,0 +1,27 @@
+body {
+    background-color: #323234;
+}
+
+button {
+    border: 1px, solid, #5a5a5c;
+    color: white;
+    padding: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #474749;
+}
+
+.active {
+    background-color: #4e9b3f;
+}
+
+.inactive {
+    background-color: #b98b28;
+}

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Socket io test</title>
+        <script src="jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <button type="button" id="pad_0" class="active">PAD 0</button> 
+        <button type="button" id="pad_1" class="inactive">PAD 1</button> 
+        <button type="button" id="pad_2" class="inactive">PAD 2</button> 
+        <button type="button" id="pad_3" class="disabled">PAD 3</button> 
+        <button type="button" id="pad_4" class="disabled">PAD 4</button> 
+
+
+        <script src="socket.io.js"></script>
+
+        <script>
+
+            var socket = io.connect(location.hostname + ':8081')
+
+            $(document).ready(function() {   
+                function poll_connection_status() { 
+                    console.log('connected: ' + socket.connected + ', sid='+socket.id)
+                }
+                setInterval (poll_connection_status, 5000);
+            });
+
+            var pads = $('button'); //array of all buttons on the page
+
+            function sendMessage(type,message) {
+                socket.emit(type, message)
+            }
+
+            $("button").click(function(){
+                sendMessage('pad_hit', pads.index(this))
+            });
+
+            socket.on('broadcast', function (data) {
+                console.log(data)
+            });
+            socket.on('pad_active', function (data) {
+                console.log(data)
+            });
+
+        </script>
+    </body>
+</html>
