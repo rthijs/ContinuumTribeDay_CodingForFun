@@ -12,6 +12,8 @@
         <button type="button" id="pad_3" class="disabled">PAD 3</button> 
         <button type="button" id="pad_4" class="disabled">PAD 4</button> 
 
+        <div id="status">connecting...</div>
+
 
         <script src="socket.io.js"></script>
 
@@ -19,14 +21,38 @@
 
             var socket = io.connect(location.hostname + ':8081')
 
+            var pads = $('button'); //array of all buttons on the page
+
+            var enable_flags = [];
+            var active_flags = [];
+
+            function update_flags(data, flags) {
+                for (var i=0; i < data.length; i++) {
+                    flags[i] = data[i] == 'true' ? true : false
+                }
+                update_pads()
+            }
+
+            function update_pads() {
+                for (var i = 0; i < pads.length; i++) {
+                    if (!enable_flags[i]) {
+                        pads[i].className="disabled"
+                    } else {
+                        if (active_flags[i]) {
+                            pads[i].className="active"
+                        } else {
+                            pads[i].className="inactive"
+                        }
+                    }
+                }
+            }
+
             $(document).ready(function() {   
                 function poll_connection_status() { 
-                    console.log('connected: ' + socket.connected + ', sid='+socket.id)
+                    $('#status').text('connected: ' + socket.connected + ', sid='+socket.id)
                 }
                 setInterval (poll_connection_status, 5000);
             });
-
-            var pads = $('button'); //array of all buttons on the page
 
             function sendMessage(type,message) {
                 socket.emit(type, message)
@@ -36,11 +62,18 @@
                 sendMessage('pad_hit', pads.index(this))
             });
 
-            socket.on('broadcast', function (data) {
-                console.log(data)
+            socket.on('pad_enabled', function (data) {
+                update_flags(data, enable_flags)
             });
+
             socket.on('pad_active', function (data) {
-                console.log(data)
+                update_flags(data, active_flags)
+            });
+
+            socket.on('pad_text', function(data) {
+                for (var i = 0; i < pads.length; i++) {
+                    $('#'+pads[i].id).text(data[i])
+                }
             });
 
         </script>

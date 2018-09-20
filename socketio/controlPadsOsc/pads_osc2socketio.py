@@ -12,19 +12,22 @@ from socketIO_client import SocketIO
 
 socketIO = SocketIO('localhost', 8081)
 
+def sp_ring_to_array(data):
+    return data.strip('(ring )')
+
 def pad_active_handler(address, data):
     print('in pad_active_handler: ' + data)
-    socketIO.emit('pad_info_active', data)
+    socketIO.emit('pad_info_active', sp_ring_to_array(data))
 
 
 def pad_enabled_handler(address, data):
     print('in pad_enabled_handler: ' + data)
-    socketIO.emit('pad_info_enabled', data)
+    socketIO.emit('pad_info_enabled', sp_ring_to_array(data))
 
 
 def pad_text_handler(address, data):
     print('in pad_text_handler: ' + data)
-    socketIO.emit('pad_info_text', data)
+    socketIO.emit('pad_info_text', sp_ring_to_array(data))
 
 dispatcher = dispatcher.Dispatcher()
 

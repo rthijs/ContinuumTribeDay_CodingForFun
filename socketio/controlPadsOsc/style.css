@@ -25,3 +25,8 @@ button {
 .inactive {
     background-color: #b98b28;
 }
+
+#status {
+    font-size: 8px;
+    color: #5a5a5c;
+}

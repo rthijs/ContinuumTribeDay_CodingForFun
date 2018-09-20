@@ -28,15 +28,15 @@ async def handle_pad_hit(sid, data):
 
 @sio.on('pad_info_text')
 async def handle_pad_info_text(sid, data):
-    print('pad info text: ' + data )
+    await sio.emit('pad_text', data.replace('"','').split(', '))
 
 @sio.on('pad_info_active')
 async def handle_pad_info_active(sid, data):
-    print('pad info active: ' + data )
+    await sio.emit('pad_active', data.split(', '))
 
 @sio.on('pad_info_enabled')
 async def handle_pad_info_enabled(sid, data):
-    print('pad info enabled: ' + data )
+    await sio.emit('pad_enabled', data.split(', '))
 
 
 @sio.on('disconnect')
