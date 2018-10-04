@@ -45,10 +45,14 @@ except (EOFError, KeyboardInterrupt):
 print("Sleeping for 10 seconds, make the connection please")
 time.sleep(10)
 
-for x in range(128):
-    message=[channel_voice_message, x, colour_code]
-    print(message)
-    midiout.send_message(message)
+#for x in range(128):
+#    message=[channel_voice_message, x, colour_code]
+#    print(message)
+#    midiout.send_message(message)
+
+message=[0x9F,0x24,0x12]
+print(message)
+midiout.send_message(message)
 
 del midiout
 print("Exit.")

@@ -60,8 +60,8 @@ trg_zone_3_line_thickness = 3
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
-greenLower = (66, 84, 208)
-greenUpper = (79, 197, 255)
+greenLower = (49, 119, 121)
+greenUpper = (66, 162, 207)
 pts = deque(maxlen=args["buffer"])
  
 # if a video path was not supplied, grab the reference
