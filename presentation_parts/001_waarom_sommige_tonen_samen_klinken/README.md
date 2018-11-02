@@ -51,6 +51,6 @@ Laten we voor de lol deze output eens naar een tuner sturen om dit te bevestigen
 
 ![E5](images/tuner_E5.png "E5")
 
-Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier).
+Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier). Je ziet op het display dat dit volgens de tuner niet exact een mi is, hierover later meer.
 
 
