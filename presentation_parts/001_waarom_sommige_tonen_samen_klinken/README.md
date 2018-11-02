@@ -24,7 +24,7 @@ Nu samen met deze noot willekeurige andere noten spelen klinkt waarschijnlijk ni
 
 ## Het oktaaf
 
-De eerste boventoon is de noot waarvan de frequentie het dubbel is van de grondnoot. Er passen dus precies 2 golven in 1 golf van de grondnoot oftewel een verhouding van 2:1.
+De eerste boventoon of tweede harmonische is de noot waarvan de frequentie het dubbel is van de grondnoot. Er passen dus precies 2 golven in 1 golf van de grondnoot oftewel een verhouding van 2:1.
 
 ```
 { var grondtoon = 440;
@@ -53,4 +53,10 @@ Laten we voor de lol deze output eens naar een tuner sturen om dit te bevestigen
 
 Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier). Je ziet op het display dat dit volgens de tuner niet exact een mi is, hierover later meer.
 
+Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts.
 
+
+| x | frequentie | deler | freq in oktaaf | nootnaam | trap |
+|---|-----------:|------:|---------------:|---------:|-----:|
+| 1 |        440 |     1 |            440 |       la |    I |
+| 2 |        880 |     1 |            880 |       la |    I |
