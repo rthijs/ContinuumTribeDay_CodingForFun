@@ -39,6 +39,18 @@ De eerste boventoon is de noot waarvan de frequentie het dubbel is van de grondn
 
 In het groen de grondtoon, in het rood het oktaaf en in het blauw de som van de twee. De som is ook het signaal dat naar de speakers gaat.
 
+## Meer boventonen
 
+Hetzelfde kunnen we doen voor andere verhoudingen. Als we een verhouding van 3:1 nemen krijgen we dit:
+
+![kwint](images/oktaaf.png "Kwint")
+
+We zitten hier dus meer dan een oktaaf boven de grondtoon, om in hetzelfde oktaaf uit te komen delen we de frequentie door 2 om dezelfde noot een oktaaf te lager te krijgen. De verhouding wordt dus 3:2 en dit komt overeen met een reine kwint, of perfect fifth in het engels. Aangezien we op een la begonnen zijn geeft dit een mi, zouden we met do gestart zijn was dit een sol.
+
+Laten we voor de lol deze output eens naar een tuner sturen om dit te bevestigen:
+
+![E5](images/tuner_E5.png "E5")
+
+Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier).
 
 
