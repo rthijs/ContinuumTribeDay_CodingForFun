@@ -55,7 +55,7 @@ Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier). Je 
 
 Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts. Op [Wikipedia - Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(music)) vind je meer.
 
-# De reine stemming
+## De reine stemming
 
 In wat we noemen de reine stemming leiden we de andere tonen af van enkele eenvoudige verhoudingen. Een kwint komt overeen met het verschil tussen de eerste boventoon (2/1) en de tweede boventoon (3/1) en krijgt daarom de breuk 3/2. Een reine kwart komt overeen met het verschil tussen de tweede boventoon (3/1) en de derde boventoon (4/1), en krijgt daarom de breuk 4/3. (Om het "verschil" te bekomen moet je hier delen, niet aftrekken.)
 
@@ -65,4 +65,10 @@ De twee mogelijke verhoudingen voor de secunde zijn het gevolg van ofwel het ver
 
 De tonen die het beste samenklinken zijn zoals gezegd het oktaaf, gevolgd door de reine kwint en de reine kwart (2:1, 3:2, 4:3). De sexten en tertsen, zowel groot als klein, klinken ook best nog goed maar de overige noten zijn dissonant.
 
-# De gelijkzwevende stemming
+## De gelijkzwevende stemming
+
+Een nadeel van de reine stemming is dat deze vals kan klinken als naar een andere toonsoort overgegaan wordt. Om dit op te vangen is de gelijkzwevende stemming bedacht, deze is lichtjes vals met gelukkig een zeer kleine afwijking voor de belangrijkste afstenden zoals de kwint en de kwart. De gelijkzwevende stemming klinkt ook even "vals" in alle toonaarden in tegenstelling tot de reine stemming.
+
+In de gelijkzwevende stemming wordt het oktaaf verdeeld in 12 tonen die op gelijke afstand van elkaar liggen, de verhouding van frequenties van twee opeenvolgende tonen is de twaalfdemachtswortel van 2.
+
+Bijna al onze westerse muziek wordt gespeeld op instrumenten die gestemd zijn volgens de gelijkzwevende stemming dus onze oren zijn dit gewoon waardoor dit voor ons helemaal niet vals klinkt. De "regels" van hierboven blijven geldig: de tonen die het beste samenklinken met de grondtoon zijn het oktaaf, de kwint en de kwart.
