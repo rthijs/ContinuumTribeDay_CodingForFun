@@ -53,20 +53,14 @@ Laten we voor de lol deze output eens naar een tuner sturen om dit te bevestigen
 
 Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier). Je ziet op het display dat dit volgens de tuner niet exact een mi is, hierover later meer.
 
-Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts. In onderstaande tabel zie je een overzicht. Ik laat de veelvouden van 2 hoger dan 2 weg, deze geven telkens de grondtoon maar telkens een oktaaf hoger.
+Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts. Op [Wikipedia - Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(music)) vind je meer.
 
+# De reine stemming
 
-| x | frequentie | deler | freq in oktaaf | nootnaam | trap |      interval |
-|---|-----------:|------:|---------------:|---------:|-----:|--------------:|
-| 1 |        440 |     1 |            440 |       la |    I |         prime |
-| 2 |        880 |     1 |            880 |       la |    I |        oktaaf |
-| 3 |       1320 |     2 |            660 |       la |    V |   reine kwint |
-| 5 |       2200 |     1 |            550 |       la |  III |   grote terts |
-| 7 |       3080 |     1 |         513,33 |       la | VIIb | klein septiem |
-| 9 |       3960 |     1 |            495 |       la |   II | grote secunde |
-|11 |       4840 |     1 |            484 |       la |  IV# |      tritonus |
-|13 |       5720 |     1 |         476,67 |       la |  VIb |   kleine sext |
+In wat we noemen de reine stemming leiden we de andere tonen af van enkele eenvoudige verhoudingen. Een kwint komt overeen met het verschil tussen de eerste boventoon (2/1) en de tweede boventoon (3/1) en krijgt daarom de breuk 3/2. Een reine kwart komt overeen met het verschil tussen de tweede boventoon (3/1) en de derde boventoon (4/1), en krijgt daarom de breuk 4/3. (Om het "verschil" te bekomen moet je hier delen, niet aftrekken.)
 
-enzoverder, op [Wikipedia - Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(music)) staat er meer.
+![verhoudingen](images/noten_verhoudingen.png "Verhoudingen")
 
-lees ook: https://nl.wikipedia.org/wiki/Reine_stemming
+De twee mogelijke verhoudingen voor de secunde zijn het gevolg van ofwel het verschil te nemen tussen kwint en kwart (9/8), ofwel tussen kwart en kleine terts (10/9), voor wie hier meer over wil weten moet je maar eens wat bijlezen over het [didymische komma](https://nl.wikipedia.org/wiki/Didymisch_komma).
+
+De tonen die het beste samenklinken zijn zoals gezegd het oktaaf, gevolgd door de reine kwint en de reine kwart (2:1, 3:2, 4:3). De sexten en tertsen, zowel groot als klein, klinken ook best nog goed maar de overige noten zijn dissonant.
