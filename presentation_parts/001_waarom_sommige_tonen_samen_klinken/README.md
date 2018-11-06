@@ -64,3 +64,5 @@ In wat we noemen de reine stemming leiden we de andere tonen af van enkele eenvo
 De twee mogelijke verhoudingen voor de secunde zijn het gevolg van ofwel het verschil te nemen tussen kwint en kwart (9/8), ofwel tussen kwart en kleine terts (10/9), voor wie hier meer over wil weten moet je maar eens wat bijlezen over het [didymische komma](https://nl.wikipedia.org/wiki/Didymisch_komma).
 
 De tonen die het beste samenklinken zijn zoals gezegd het oktaaf, gevolgd door de reine kwint en de reine kwart (2:1, 3:2, 4:3). De sexten en tertsen, zowel groot als klein, klinken ook best nog goed maar de overige noten zijn dissonant.
+
+# De gelijkzwevende stemming
