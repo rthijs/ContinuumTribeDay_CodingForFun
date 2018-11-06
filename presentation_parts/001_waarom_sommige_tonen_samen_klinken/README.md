@@ -53,10 +53,20 @@ Laten we voor de lol deze output eens naar een tuner sturen om dit te bevestigen
 
 Inderdaad een hoge mi (E voor mi en 5 voor welk oktaaf op een pianoklavier). Je ziet op het display dat dit volgens de tuner niet exact een mi is, hierover later meer.
 
-Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts.
+Deze serie zetten we gewoon verder: 4 keer de frequentie geeft weer een oktaaf, 5 keer geeft ons een grote terts. In onderstaande tabel zie je een overzicht. Ik laat de veelvouden van 2 hoger dan 2 weg, deze geven telkens de grondtoon maar telkens een oktaaf hoger.
 
 
-| x | frequentie | deler | freq in oktaaf | nootnaam | trap |
-|---|-----------:|------:|---------------:|---------:|-----:|
-| 1 |        440 |     1 |            440 |       la |    I |
-| 2 |        880 |     1 |            880 |       la |    I |
+| x | frequentie | deler | freq in oktaaf | nootnaam | trap |      interval |
+|---|-----------:|------:|---------------:|---------:|-----:|--------------:|
+| 1 |        440 |     1 |            440 |       la |    I |         prime |
+| 2 |        880 |     1 |            880 |       la |    I |        oktaaf |
+| 3 |       1320 |     2 |            660 |       la |    V |   reine kwint |
+| 5 |       2200 |     1 |            550 |       la |  III |   grote terts |
+| 7 |       3080 |     1 |         513,33 |       la | VIIb | klein septiem |
+| 9 |       3960 |     1 |            495 |       la |   II | grote secunde |
+|11 |       4840 |     1 |            484 |       la |  IV# |      tritonus |
+|13 |       5720 |     1 |         476,67 |       la |  VIb |   kleine sext |
+
+enzoverder, op [Wikipedia - Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(music)) staat er meer.
+
+lees ook: https://nl.wikipedia.org/wiki/Reine_stemming
