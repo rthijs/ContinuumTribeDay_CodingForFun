@@ -22,4 +22,10 @@ Het kan nog leuker. Vroeger speelde ik klarinet, als ik die nu terug vastneem we
 
 Meerdere grepen voor dezelfde toon? Kan handig zijn, dan pak je degene die het makkelijkst te pakken is afhankelijk van de vorige of volgende noot. Verschillende grepen voor la-kruis en si-mol? Verwarrend! Geen wonder dat het zo lang duurt voor je een instrument kan spelen. Heb je dat eindelijk onder de knie en je speelt een do dan klinkt er een si-mol want een klarinet staat in een andere stemming.
 
-Moesten we zo'n designstreken uithalen met onze software het kot zou te klein zijn.
+Moesten we zo'n designstreken uithalen met onze software het kot zou te klein zijn. Daarom stel ik volgend alternatief voor:
+
+![pianoklavier](images/klavier_alternatief.png "pianoklavier")
+
+Hier is het onmogelijk om "vals" te spelen door per ongeluk een verkeerde toets in te drukken. Meer nog, zelfs als je per ongeluk (of express, je doet maar) 2 toetsen tegelijk aanslaat klinkt het nog altijd goed. Ook bij 3 aaliggenden tegelijk (nu doe je het express) komt er nog iets melodieus uit.
+
+Beetje Python om dit mogelijk te maken: [note mapper](noteMapper.py)
