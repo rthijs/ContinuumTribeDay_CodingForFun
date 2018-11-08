@@ -57,7 +57,7 @@ class MidiInputHandler(object):
             if (message[0] == NOTE_ON or message[0] == NOTE_OFF):
                 note = change_note(message[1])
                 velocity = message[2]
-                new_message = [message[0], note, velocity]
+                new_message = [message[0] + 1, note, velocity]
                 midiout.send_message(new_message)
             print ('playing midi')
 
@@ -65,11 +65,6 @@ class MidiInputHandler(object):
         self._wallclock += deltatime
         print("[%s] @%0.6f %r" % (self.port, self._wallclock, message))
         play_midi(message)
-
-
-
-
-
 
 # Prompts user for MIDI input port, unless a valid port number or name
 # is given as the first argument on the command line.
