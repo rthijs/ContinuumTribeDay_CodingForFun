@@ -26,6 +26,6 @@ Moesten we zo'n designstreken uithalen met onze software het kot zou te klein zi
 
 ![pianoklavier](images/klavier_alternatief.png "pianoklavier")
 
-Hier is het onmogelijk om "vals" te spelen door per ongeluk een verkeerde toets in te drukken. Meer nog, zelfs als je per ongeluk (of express, je doet maar) 2 toetsen tegelijk aanslaat klinkt het nog altijd goed. Ook bij 3 aaliggenden tegelijk (nu doe je het express) komt er nog iets melodieus uit.
+Hier is het onmogelijk om "vals" te spelen door per ongeluk een verkeerde toets in te drukken. Meer nog, zelfs als je per ongeluk (of express, je doet maar) 2 toetsen tegelijk aanslaat klinkt het nog altijd goed.
 
 Beetje Python om dit mogelijk te maken: [note mapper](noteMapper.py)
