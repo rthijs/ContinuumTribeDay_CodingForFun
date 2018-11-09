@@ -23,8 +23,14 @@ from __future__ import print_function
 import logging
 import sys
 import time
+import random
 
 from rtmidi.midiutil import open_midioutput
+from rtmidi.midiconstants import NOTE_ON
+
+def send_midi(message):
+    print(message)
+    midiout.send_message(message)
 
 log = logging.getLogger('midiout')
 logging.basicConfig(level=logging.DEBUG)
@@ -42,17 +48,41 @@ try:
 except (EOFError, KeyboardInterrupt):
     sys.exit()
 
-print("Sleeping for 10 seconds, make the connection please")
-time.sleep(10)
+print("Sleeping ..., make the connection please")
+time.sleep(1)
 
 #for x in range(128):
 #    message=[channel_voice_message, x, colour_code]
 #    print(message)
 #    midiout.send_message(message)
 
-message=[0x9F,0x24,0x12]
-print(message)
-midiout.send_message(message)
+#message=[0x90,12,127] #enter in control mode
+
+#enable in control mode
+send_midi([NOTE_ON,12,127])
+
+#loop over pads
+pads = [96,97,98,99,100,101,102,103,104,112,113,114,115,116,117,118,119,120]
+
+square_pads = [96,97,98,99,100,101,102,103,112,113,114,115,116,117,118,119]
+
+#while 1:
+#    for pad in pads:
+#        send_midi([NOTE_ON, pad, random.randint(0,128)])
+#        time.sleep(0.02)
+
+#while 1:
+#    for x in range(128):
+#        for pad in pads:
+#            send_midi([NOTE_ON, pad, x])
+#        time.sleep(0.2)
+
+i = 0
+while i < 128:
+    for pad in square_pads:
+        send_midi([NOTE_ON, pad, i])
+        i+=1
+        time.sleep(0.05)
 
 del midiout
 print("Exit.")
